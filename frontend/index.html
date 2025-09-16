@@ -3,17 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Management Tool</title>
+  <title>Project Management App</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Project Management Tool</h1>
-  <div id="app">
-    <div class="input-row">
-      <input id="new-task" type="text" placeholder="Add a new task…" />
-      <button id="add-btn">Add Task</button>
-    </div>
-    <ul id="task-list"></ul>
+  <h1>Project Management App</h1>
+  <div id="container">
+    <aside id="sidebar">
+      <h2>Projects</h2>
+      <ul id="project-list"></ul>
+      <div class="new-project">
+        <input id="new-project-name" type="text" placeholder="New project name" />
+        <button id="add-project-btn">Add Project</button>
+      </div>
+    </aside>
+    <main id="main">
+      <h2 id="project-title">Select a project</h2>
+      <div id="board" class="hidden">
+        <div class="column" data-status="todo">
+          <h3>To Do</h3>
+          <ul class="task-list"></ul>
+        </div>
+        <div class="column" data-status="in-progress">
+          <h3>In Progress</h3>
+          <ul class="task-list"></ul>
+        </div>
+        <div class="column" data-status="done">
+          <h3>Done</h3>
+          <ul class="task-list"></ul>
+        </div>
+      </div>
+      <div id="task-inputs" class="hidden">
+        <h3>Add Task</h3>
+        <input id="new-task-title" type="text" placeholder="Task title" />
+        <textarea id="new-task-desc" placeholder="Task description"></textarea>
+        <button id="add-task-btn">Add Task</button>
+      </div>
+    </main>
   </div>
   <script src="app.js"></script>
 </body>

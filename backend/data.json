@@ -1,0 +1,20 @@
+{
+  "nextProjectId": 2,
+  "nextTaskId": 2,
+  "projects": [
+    {
+      "id": 1,
+      "name": "Example Project",
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Example Task",
+          "description": "This is a sample task",
+          "status": "todo",
+          "createdAt": "2025-09-16T12:30:00.000Z",
+          "updatedAt": "2025-09-16T12:30:00.000Z"
+        }
+      ]
+    }
+  ]
+}
